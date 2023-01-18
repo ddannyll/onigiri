@@ -1,6 +1,6 @@
 class Game {
     #spriteList
-    #levelSprites
+    #levelSpriteList
     #level
     #score 
     #highscore
@@ -8,7 +8,7 @@ class Game {
     
     constructor(spriteList) {
         this.#spriteList = spriteList.map(sprite => {return {id: sprite, picked:false}})
-        this.#levelSprites = []
+        this.#levelSpriteList = []
         this.#level = 0
         this.#score = 0
         this.#highscore = 0
@@ -16,33 +16,33 @@ class Game {
         if (this.#maxLevel < 1) {
             throw new Error('Invalid spriteList')
         }
-        
-        this.#advanceLevel()
+        this.#nextLevel()
     }
 
-    getMaxLevel() {
-        return this.#maxLevel
-    }
-
-    getLevelSprites() {
-        return this.#levelSprites
-    }
-
-    getspriteList() {
-        return this.#spriteList
-    }
-
-    getLevel() {
+    get level() {
         return this.#level
     }
 
-    getScore() {
+    get score() {
         return this.#score
     }
 
-    getHighScore() {
-        return this.#highscore
+    get highscore() {
+        return this.#score
     }
+
+    get levelSpriteList() {
+        return structuredClone(this.#levelSpriteList)
+    }
+
+    get spriteList() {
+        return structuredClone(this.#spriteList)
+    }
+
+    get maxLevel() {
+        return this.#maxLevel
+    }
+
 
     #getMaxLevel() {
         let level = 1
@@ -64,8 +64,8 @@ class Game {
         }
         this.#level = 0
         this.#score = 0
+        this.#levelSpriteList = []
         this.#spriteList.forEach(sprite => sprite.picked = false)
-        this.#advanceLevel()
     }
 
     #getUnpickedSpriteList() {
@@ -73,21 +73,21 @@ class Game {
     }
 
     #getLevelSprite(id) {
-        return this.#levelSprites.find(curr => curr.id === id)
+        return this.#levelSpriteList.find(curr => curr.id === id)
     }
 
-    #advanceLevel() {
+    #nextLevel() {
         this.#level++
         if (this.#level > this.#maxLevel) {
             this.#endGame()
             return
         }
-        this.#levelSprites = []
+        this.#levelSpriteList = []
         let unpickedSprites = this.#getUnpickedSpriteList()
         for (let i = 0; i < this.#getNumLevelSprites(this.#level); i++) {
             const chosenIndex = Math.floor(Math.random() * unpickedSprites.length)
             const randomSprite = unpickedSprites[chosenIndex]
-            this.#levelSprites.push(randomSprite)
+            this.#levelSpriteList.push(randomSprite)
             unpickedSprites = unpickedSprites.slice(0, chosenIndex).concat(unpickedSprites.slice(chosenIndex + 1))
         }
     }
@@ -97,15 +97,15 @@ class Game {
         if (this.#score > this.#highscore) {
             this.#highscore = this.#score
         }
-        if (this.#levelSprites.every(sprite => sprite.picked)) {
-            this.#advanceLevel()
+        if (this.#levelSpriteList.every(sprite => sprite.picked)) {
+            this.#nextLevel()
         } else {
             // Shuffle array
-            for (let i = 0; i < this.#levelSprites.length; i++) {
-                const tmp = this.#levelSprites[i]
-                const replacementIndex = Math.floor(Math.random() * (this.#levelSprites.length - i)) + i
-                this.#levelSprites[i] = this.#levelSprites[replacementIndex]
-                this.#levelSprites[replacementIndex] = tmp
+            for (let i = 0; i < this.#levelSpriteList.length; i++) {
+                const tmp = this.#levelSpriteList[i]
+                const replacementIndex = Math.floor(Math.random() * (this.#levelSpriteList.length - i)) + i
+                this.#levelSpriteList[i] = this.#levelSpriteList[replacementIndex]
+                this.#levelSpriteList[replacementIndex] = tmp
             }
         }
     }
@@ -126,15 +126,8 @@ class Game {
 }
 
 let game = new Game([1,2,3,4, 5])
-console.log(game.getLevelSprites(), game.getScore(), game.getMaxLevel());
-
+console.log(game.levelSpriteList, game.spriteList, "score" + game.score, "maxLevel" + game.maxLevel, "level" + game.level);
+game.spriteList.pop()
 game.pickSprite(1)
-console.log(game.getLevelSprites(), game.getScore())
+console.log(game.levelSpriteList, game.spriteList, "score" + game.score, "maxLevel" + game.maxLevel, "level" + game.level);
 
-game.pickSprite(2)
-game.pickSprite(3)
-console.log(game.getLevelSprites(), game.getScore())
-
-game.pickSprite(4)
-
-console.log(game.getLevelSprites(), game.getScore())
