@@ -1,15 +1,12 @@
 {
   "files": {
-    "main.css": "/onigiri/static/css/main.338514f0.css",
-    "main.js": "/onigiri/static/js/main.4f41c844.js",
-    "static/js/787.ac827f9d.chunk.js": "/onigiri/static/js/787.ac827f9d.chunk.js",
-    "index.html": "/onigiri/index.html",
-    "main.338514f0.css.map": "/onigiri/static/css/main.338514f0.css.map",
-    "main.4f41c844.js.map": "/onigiri/static/js/main.4f41c844.js.map",
-    "787.ac827f9d.chunk.js.map": "/onigiri/static/js/787.ac827f9d.chunk.js.map"
+    "main.css": "/onigiri/static/css/main.ff87240d.css",
+    "main.js": "/onigiri/static/js/main.c71d9f39.js",
+    "static/js/27.a104aafa.chunk.js": "/onigiri/static/js/27.a104aafa.chunk.js",
+    "index.html": "/onigiri/index.html"
   },
   "entrypoints": [
-    "static/css/main.338514f0.css",
-    "static/js/main.4f41c844.js"
+    "static/css/main.ff87240d.css",
+    "static/js/main.c71d9f39.js"
   ]
 }
