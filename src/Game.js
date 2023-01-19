@@ -19,6 +19,14 @@ class Game {
         this.#nextLevel()
     }
 
+    get GAME_OVER() {
+        return 0
+    }
+
+    get GAME_WON() {
+        return 1
+    }
+
     get level() {
         return this.#level
     }
@@ -28,7 +36,7 @@ class Game {
     }
 
     get highscore() {
-        return this.#score
+        return this.#highscore
     }
 
     get levelSpriteList() {
@@ -37,10 +45,6 @@ class Game {
 
     get spriteList() {
         return structuredClone(this.#spriteList)
-    }
-
-    get maxLevel() {
-        return this.#maxLevel
     }
 
 
@@ -59,9 +63,6 @@ class Game {
     }
 
     #endGame() {
-        if (this.#score > this.#highscore) {
-            this.#highscore = this.#score
-        }
         this.#level = 0
         this.#score = 0
         this.#levelSpriteList = []
@@ -123,4 +124,11 @@ class Game {
             this.#endGame()
         }
     }
+
+    restartGame() {
+        this.#endGame()
+        this.#nextLevel()
+    }
 }
+
+export default Game
