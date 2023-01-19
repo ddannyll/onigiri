@@ -124,10 +124,3 @@ class Game {
         }
     }
 }
-
-let game = new Game([1,2,3,4, 5])
-console.log(game.levelSpriteList, game.spriteList, "score" + game.score, "maxLevel" + game.maxLevel, "level" + game.level);
-game.spriteList.pop()
-game.pickSprite(1)
-console.log(game.levelSpriteList, game.spriteList, "score" + game.score, "maxLevel" + game.maxLevel, "level" + game.level);
-
