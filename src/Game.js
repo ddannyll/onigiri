@@ -1,4 +1,13 @@
+import uniqid from 'uniqid';
 class Game {
+    
+    static GAME_STATES = {
+        'play': Symbol('play'),
+        'won': Symbol('won'),
+        'lost': Symbol('lost'),
+    }
+
+    #gameState
     #spriteList
     #levelSpriteList
     #level
@@ -9,22 +18,17 @@ class Game {
     constructor(spriteList) {
         this.#spriteList = spriteList.map(sprite => {return {id: sprite, picked:false}})
         this.#levelSpriteList = []
-        this.#level = 0
-        this.#score = 0
+        this.#gameState = Game.GAME_STATES.play
         this.#highscore = 0
         this.#maxLevel = this.#getMaxLevel()
         if (this.#maxLevel < 1) {
             throw new Error('Invalid spriteList')
         }
-        this.#nextLevel()
+        this.restartGame()
     }
 
-    get GAME_OVER() {
-        return 0
-    }
-
-    get GAME_WON() {
-        return 1
+    get gameState() {
+        return this.#gameState
     }
 
     get level() {
@@ -62,13 +66,6 @@ class Game {
         return (level + 1) * 2
     }
 
-    #endGame() {
-        this.#level = 0
-        this.#score = 0
-        this.#levelSpriteList = []
-        this.#spriteList.forEach(sprite => sprite.picked = false)
-    }
-
     #getUnpickedSpriteList() {
         return this.#spriteList.filter(sprite => !sprite.picked)
     }
@@ -80,7 +77,7 @@ class Game {
     #nextLevel() {
         this.#level++
         if (this.#level > this.#maxLevel) {
-            this.#endGame()
+            this.#gameState = Game.GAME_STATES.won
             return
         }
         this.#levelSpriteList = []
@@ -112,21 +109,30 @@ class Game {
     }
 
     pickSprite(id) {
+        if (this.#gameState !== Game.GAME_STATES.play) {
+            throw new Error(`Incorrect game state: ${this.#gameState.description} 
+                             Must be in ${Game.GAME_STATES.play.description}`)
+        }
+        
         const sprite = this.#getLevelSprite(id)
         if (!sprite) {
-            this.#endGame()
             throw new Error(`Sprite with id ${id} not in play`)
         }
+
         if (!sprite.picked) {
             sprite.picked = true
             this.#handleGoodPick()
         } else {
-            this.#endGame()
+            this.#gameState = Game.GAME_STATES.lost
         }
     }
 
     restartGame() {
-        this.#endGame()
+        this.#level = 0
+        this.#score = 0
+        this.#levelSpriteList = []
+        this.#spriteList.forEach(sprite => sprite.picked = false)
+        this.#gameState = Game.GAME_STATES.play
         this.#nextLevel()
     }
 }

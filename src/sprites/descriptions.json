@@ -1,0 +1,302 @@
+[
+        {
+            "id": "jpf1",
+            "name": "Sashimi Moriawase",
+            "description": "Mixed sliced thinly raw fish platter"
+        },
+        {
+            "id": "jpf2",
+            "name": "Maguro Nigiri",
+            "description": "Tuna Sushi"
+        },
+        {
+            "id": "jpf3",
+            "name": "Sake Nigiri",
+            "description": "Salmon Sushi"
+        },
+        {
+            "id": "jpf4",
+            "name": "Hirame Nigiri",
+            "description": "Flounder Sushi"
+        },
+        {
+            "id": "jpf5",
+            "name": "Ebi Nigiri",
+            "description": "Cooked Shrimp Sushi"
+        },
+        {
+            "id": "jpf6",
+            "name": "Kani Nigiri",
+            "description": "Imitation Crab Sushi"
+        },
+        {
+            "id": "jpf7",
+            "name": "Tamago Nigiri",
+            "description": "Egg Sushi"
+        },
+        {
+            "id": "jpf8",
+            "name": "Ikura Gunkan Maki",
+            "description": "Salmon Roe Sushi"
+        },
+        {
+            "id": "jpf9",
+            "name": "Sake Uramaki",
+            "description": "Salmon Inside Out Sushi"
+        },
+        {
+            "id": "jpf10",
+            "name": "Inarizushi",
+            "description": "Fried Tofu Skin Sushi"
+        },
+        {
+            "id": "jpf11",
+            "name": "Hosomaki",
+            "description": "Thin Sushi Roll"
+        },
+        {
+            "id": "jpf12",
+            "name": "Futomaki",
+            "description": "Thick Sushi Roll"
+        },
+        {
+            "id": "jpf13",
+            "name": "Uramaki",
+            "description": "Inside Out Sushi"
+        },
+        {
+            "id": "jpf14",
+            "name": "Onigiri",
+            "description": "Rice Ball"
+        },
+        {
+            "id": "jpf15",
+            "name": "Mini Onigiri",
+            "description": "Mini Rice Ball"
+        },
+        {
+            "id": "jpf16",
+            "name": "Tenmusu",
+            "description": "Tempura Shrimp Rice Ball"
+        },
+        {
+            "id": "jpf17",
+            "name": "Temaki",
+            "description": "Hand Roll Sushi"
+        },
+        {
+            "id": "jpf18",
+            "name": "Shoyu Ramen",
+            "description": "Noodle in soy sauce based-broth"
+        },
+        {
+            "id": "jpf19",
+            "name": "Tsukemen",
+            "description": "Cold noodle ramen served with seperate bowl of broth or soup"
+        },
+        {
+            "id": "jpf20",
+            "name": "Tori Katsudon",
+            "description": "Crispy Panko Chicken Cutlets"
+        },
+        {
+            "id": "jpf21",
+            "name": "Omuraisu",
+            "description": "Japanese Rice Omelette"
+        },
+        {
+            "id": "jpf22",
+            "name": "Kare Raisu",
+            "description": "Japanese Curry Rice"
+        },
+        {
+            "id": "jpf23",
+            "name": "Sukiyaki",
+            "description": "Japanese Hotpot"
+        },
+        {
+            "id": "jpf24",
+            "name": "Tamagoyaki",
+            "description": "Thick Rolled Omelette"
+        },
+        {
+            "id": "jpf25",
+            "name": "Chawanmushi",
+            "description": "Steamed Egg Custard"
+        },
+        {
+            "id": "jpf26",
+            "name": "Yakizakana",
+            "description": "Grilled Fish"
+        },
+        {
+            "id": "jpf27",
+            "name": "Miso Shiru",
+            "description": "Miso Soup"
+        },
+        {
+            "id": "jpf28",
+            "name": "Hiyayakko",
+            "description": "Cold Tofu "
+        },
+        {
+            "id": "jpf29",
+            "name": "Natto",
+            "description": "Fermented Soybean"
+        },
+        {
+            "id": "jpf30",
+            "name": "Edamame",
+            "description": "Green Soybean"
+        },
+        {
+            "id": "jpf31",
+            "name": "Gyoza",
+            "description": "Japanese Dumplings"
+        },
+        {
+            "id": "jpf32",
+            "name": "Tonkatsu",
+            "description": "Deep Fried Breaded Pork Cutlet"
+        },
+        {
+            "id": "jpf33",
+            "name": "Umeboshi",
+            "description": "Pickled Japanese Plum "
+        },
+        {
+            "id": "jpf34",
+            "name": "Chikuwa",
+            "description": "Tube-Shaped Fish Cake"
+        },
+        {
+            "id": "jpf35",
+            "name": "Kushiyaki",
+            "description": "Skewered Poultry & Non-Poultry"
+        },
+        {
+            "id": "jpf36",
+            "name": "Ebi Tempura",
+            "description": "Shrimp covered with thin tempura coating until lightly crisp"
+        },
+        {
+            "id": "jpf37",
+            "name": "Takoyaki",
+            "description": "Ball shaped snack made from batter,octopus and other ingredients"
+        },
+        {
+            "id": "jpf38",
+            "name": "Shoyu",
+            "description": "Soy Sauce"
+        },
+        {
+            "id": "jpf39",
+            "name": "Wasabi",
+            "description": "Japanese Horseradish"
+        },
+        {
+            "id": "jpf40",
+            "name": "Gari",
+            "description": "Pickled Ginger"
+        },
+        {
+            "id": "jpf41",
+            "name": "Katsu Sando",
+            "description": "Crispy pork cutlet sandwiched between Japanese milk bread"
+        },
+        {
+            "id": "jpf42",
+            "name": "Tamago Sando",
+            "description": "Egg salad sandwiched between Japanese milk bread"
+        },
+        {
+            "id": "jpf43",
+            "name": "Furutsu  Sando",
+            "description": "Strawberry, orange and kiwi cover with whipped cream sandwiched between Japanese milk bread),"
+        },
+        {
+            "id": "jpf44",
+            "name": "Wagashi",
+            "description": "Traditional Japanese Sweets"
+        },
+        {
+            "id": "jpf45",
+            "name": "Hanami Dango",
+            "description": "Pink, white and green sweet chewy rice ball"
+        },
+        {
+            "id": "jpf46",
+            "name": "Ichigo Daifuku",
+            "description": "Mochi stuffed with strawberry and red bean paste filling"
+        },
+        {
+            "id": "jpf47",
+            "name": "Mochi",
+            "description": "Tiny glutinous rice cake with red bean paste filling"
+        },
+        {
+            "id": "jpf48",
+            "name": "Nama Yatsuhashi [eight bridges]",
+            "description": "Triangle mochi with red bean paste filling"
+        },
+        {
+            "id": "jpf49",
+            "name": "Sakuramochi",
+            "description": "Pink rice cake with red bean paste filling wrapped with a salty cherry blossom leaf"
+        },
+        {
+            "id": "jpf50",
+            "name": "Hishi mochi",
+            "description": "Three layered rhombus shape rice cake in pink, white and green colour"
+        },
+        {
+            "id": "jpf51",
+            "name": "Dorayaki",
+            "description": "Baked pancakes with read bean paste in the middle"
+        },
+        {
+            "id": "jpf52",
+            "name": "Imagawayaki",
+            "description": "Cake-like sponge with red bean paste filling"
+        },
+        {
+            "id": "jpf53",
+            "name": "Manju",
+            "description": "Steamed bun with red bean paste filling"
+        },
+        {
+            "id": "jpf54",
+            "name": "Taiyaki",
+            "description": "Japanese fish-shaped cake with red bean filling"
+        },
+        {
+            "id": "jpf55",
+            "name": "Kasutera",
+            "description": "Japanese honey sponge cake"
+        },
+        {
+            "id": "jpf56",
+            "name": "Melon Pan",
+            "description": "Sweet bun covered with thin cookie crust"
+        },
+        {
+            "id": "jpf57",
+            "name": "Senbei",
+            "description": "Seaweed rice crackers"
+        },
+        {
+            "id": "jpf58",
+            "name": "Kakigori",
+            "description": "Shaved ice flavoured with sweetener or syrup"
+        },
+        {
+            "id": "jpf59",
+            "name": "Anmitsu",
+            "description": "Red bean paste with agar jelly cubes, dango, and seasonal fruits"
+        },
+        {
+            "id": "jpf60",
+            "name": "Mizu Yokan",
+            "description": "Red bean jelly "
+        }
+    ]

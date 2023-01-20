@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Game from "../Game";
+import Card from "./Card";
 
 function GameUI (props) {
-    const {imagePaths} = props
+    const {images} = props
 
-    const [game, setGame] = useState(new Game(imagePaths))
+    const [game] = useState(new Game([...images.keys()]))
     const [levelSprites, setLevelSprites] = useState(game.levelSpriteList)
 
     const pickSprite = (id) => {
@@ -17,10 +18,19 @@ function GameUI (props) {
         setLevelSprites(game.levelSpriteList)
     }
 
+
     const cards = levelSprites.map(card => 
-        <button key={card.id} onClick={() => pickSprite(card.id)}>
-            <img src={card.id} alt="test" />
-        </button>
+        {
+            return (
+                <Card
+                    key={card.id}
+                    onClick={() => pickSprite(card.id)}
+                    image={images[card.id].path}
+                    name={images[card.id].name}
+                    description={images[card.id].description}
+                />
+            )
+        }
     )
 
 
@@ -29,12 +39,12 @@ function GameUI (props) {
             <h2>
                 {"Level: " + game.level}
             </h2>
-            {game.level == 0 
+            {game.gameState !== Game.GAME_STATES.play
                 ? <>
                     <h3>Game Over!</h3>
                     <button onClick={restartGame}>Restart</button>
                 </>
-                : <>{cards}</>
+                : <div className="cards">{cards}</div>
             }
             <h2>
                 {"Score: " + game.score}

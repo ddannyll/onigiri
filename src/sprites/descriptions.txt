@@ -1,0 +1,60 @@
+jpf-1|Sashimi Moriawase|Mixed sliced thinly raw fish platter
+jpf-2|Maguro Nigiri|Tuna Sushi
+jpf-3|Sake Nigiri|Salmon Sushi
+jpf-4|Hirame Nigiri|Flounder Sushi
+jpf-5|Ebi Nigiri|Cooked Shrimp Sushi
+jpf-6|Kani Nigiri|Imitation Crab Sushi
+jpf-7|Tamago Nigiri|Egg Sushi
+jpf-8|Ikura Gunkan Maki|Salmon Roe Sushi
+jpf-9|Sake Uramaki|Salmon Inside Out Sushi
+jpf-10|Inarizushi|Fried Tofu Skin Sushi
+jpf-11|Hosomaki|Thin Sushi Roll
+jpf-12|Futomaki|Thick Sushi Roll
+jpf-13|Uramaki|Inside Out Sushi
+jpf-14|Onigiri|Rice Ball
+jpf-15|Mini Onigiri|Mini Rice Ball
+jpf-16|Tenmusu|Tempura Shrimp Rice Ball
+jpf-17|Temaki|Hand Roll Sushi
+jpf-18|Shoyu Ramen|Noodle in soy sauce based-broth
+jpf-19|Tsukemen|Cold noodle ramen served with seperate bowl of broth or soup
+jpf-20|Tori Katsudon|Crispy Panko Chicken Cutlets
+jpf-21|Omuraisu|Japanese Rice Omelette
+jpf-22|Kare Raisu|Japanese Curry Rice
+jpf-23|Sukiyaki|Japanese Hotpot
+jpf-24|Tamagoyaki|Thick Rolled Omelette
+jpf-25|Chawanmushi|Steamed Egg Custard
+jpf-26|Yakizakana|Grilled Fish
+jpf-27|Miso Shiru|Miso Soup
+jpf-28|Hiyayakko|Cold Tofu 
+jpf-29|Natto|Fermented Soybean
+jpf-30|Edamame|Green Soybean
+jpf-31|Gyoza|Japanese Dumplings
+jpf-32|Tonkatsu|Deep Fried Breaded Pork Cutlet
+jpf-33|Umeboshi|Pickled Japanese Plum 
+jpf-34|Chikuwa|Tube-Shaped Fish Cake
+jpf-35|Kushiyaki|Skewered Poultry & Non-Poultry
+jpf-36|Ebi Tempura|Shrimp covered with thin tempura coating until lightly crisp
+jpf-37|Takoyaki|Ball shaped snack made from batter,octopus and other ingredients
+jpf-38|Shoyu|Soy Sauce
+jpf-39|Wasabi|Japanese Horseradish
+jpf-40|Gari|Pickled Ginger
+jpf-41|Katsu Sando|Crispy pork cutlet sandwiched between Japanese milk bread
+jpf-42|Tamago Sando|Egg salad sandwiched between Japanese milk bread
+jpf-43|Furutsu  Sando|Strawberry, orange and kiwi cover with whipped cream sandwiched between Japanese milk bread),
+jpf-44|Wagashi|Traditional Japanese Sweets
+jpf-45|Hanami Dango|Pink, white and green sweet chewy rice ball
+jpf-46|Ichigo Daifuku|Mochi stuffed with strawberry and red bean paste filling
+jpf-47|Mochi|Tiny glutinous rice cake with red bean paste filling
+jpf-48|Nama Yatsuhashi [eight bridges]|Triangle mochi with red bean paste filling
+jpf-49|Sakuramochi|Pink rice cake with red bean paste filling wrapped with a salty cherry blossom leaf
+jpf-50|Hishi mochi|Three layered rhombus shape rice cake in pink, white and green colour
+jpf-51|Dorayaki|Baked pancakes with read bean paste in the middle
+jpf-52|Imagawayaki|Cake-like sponge with red bean paste filling
+jpf-53|Manju|Steamed bun with red bean paste filling
+jpf-54|Taiyaki|Japanese fish-shaped cake with red bean filling
+jpf-55|Kasutera|Japanese honey sponge cake
+jpf-56|Melon Pan|Sweet bun covered with thin cookie crust
+jpf-57|Senbei|Seaweed rice crackers
+jpf-58|Kakigori|Shaved ice flavoured with sweetener or syrup
+jpf-59|Anmitsu|Red bean paste with agar jelly cubes, dango, and seasonal fruits
+jpf-60|Mizu Yokan|Red bean jelly 

@@ -1,20 +1,27 @@
 import './App.css'
 import GameUI from './GameUI';
-import Game from '../Game';
-import { useState } from 'react';
+import data from '../sprites/descriptions.json'
+
+const importAll = (r) => {
+    let images = {};
+    r.keys().forEach((item) => { images[item.replace('./', '').replace('.png','')] = r(item); });
+    return images;
+  }
+const imagePaths = importAll(require.context('../sprites', false, /\.(png|jpe?g|svg)$/))
+const images = data.map((description) => {
+    return {
+        path: imagePaths[description.id],
+        name: description.name,
+        description: description.description
+    }
+})
+console.log(images);
 
 
 function App(props) {
-    const importAll = (r) => {
-        let images = [];
-            r.keys().forEach((item) => { images.push(r(item))});
-        return images
-      }
-    const imagePaths = importAll(require.context('../sprites', false, /\.(png|jpe?g|svg)$/))
-
     return (
         <div className="App">
-            <GameUI imagePaths={imagePaths}/>
+            <GameUI images={images}/>
         </div>
     );
 }

@@ -1,0 +1,57 @@
+.card {
+    width: 128px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    background-color: white;
+}
+
+.card > * {
+    margin: 0;
+}
+
+.card > h3 {
+    overflow-y: auto;
+}
+
+.card p {
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: inherit;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.card:hover > p{
+    opacity: 1;
+}
+
+.card:hover {
+    z-index: 1;
+}
+
+img {
+    width: 48px;
+    height: 48px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    transition: translate 0.2s ease-out;
+    cursor: pointer;
+}
+
+button:hover {
+    translate: 0 -10%;
+}
+
