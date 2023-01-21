@@ -31,17 +31,16 @@
     position: absolute;
     width: 100%;
     top: 100%;
-    opacity: 0;
     background-color: inherit;
     padding: 0.5rem;
     border-radius: 15px;
     border: 1px solid black;
     background-color: white;
-
+    display: none;
 }
 
 .card:hover > p{
-    opacity: 1;
+    display: block;
 }
 
 .card:hover {
@@ -52,12 +51,3 @@ img {
     width: 48px;
     height: 48px;
 }
-
-button {
-
-}
-
-button:hover {
-    
-}
-
