@@ -2,4 +2,10 @@
 
 Memory game featuring the tastiest Japanese food!
 
-- Currently in development, no MVP at this time
+Created using ReactJS. Sprites by [ToffeeHazel](https://toffeehazel.itch.io/)
+
+### [Click Here To Play](https://ddannyll.github.io/onigiri/)
+
+### Preview
+![image](https://user-images.githubusercontent.com/80935652/213840856-91b65260-7a22-43e8-a8e8-44c1208f54cb.png)
+
