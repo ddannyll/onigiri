@@ -1,3 +1,32 @@
+.gameUI {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
 .cards {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gameOver {
+    text-align: center;
+}
+
+.gameOver button {
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: translate 0.2s;
+}
+
+.gameOver button:hover {
+    translate: 0 -5px;
 }

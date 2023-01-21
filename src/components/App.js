@@ -1,6 +1,8 @@
+import Header from './Header';
 import './App.css'
 import GameUI from './GameUI';
 import data from '../sprites/descriptions.json'
+import { useState } from 'react';
 
 const importAll = (r) => {
     let images = {};
@@ -15,13 +17,17 @@ const images = data.map((description) => {
         description: description.description
     }
 })
-console.log(images);
-
 
 function App(props) {
+
+    const [score, setScore] = useState(-1)
+    const [highscore, setHighscore] = useState(-1)
+    const [level, setLevel] = useState(-1)
+
     return (
         <div className="App">
-            <GameUI images={images}/>
+            <Header score={score} highscore={highscore} level={level}></Header>
+            <GameUI images={images} setScore={setScore} setHighscore={setHighscore} setLevel={setLevel}/>
         </div>
     );
 }

@@ -1,0 +1,52 @@
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Mukta', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.backgroundContainer {
+    background-color: #faf9f7;
+    padding: 1rem 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    padding: 0 40px;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+@media (max-width: 620px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+
+
+
+header img {
+    width: 32px;
+    height: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats {
+    display: flex;
+    column-gap: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
