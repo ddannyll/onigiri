@@ -26,6 +26,8 @@
     font-size: 1rem;
     cursor: pointer;
     transition: translate 0.2s;
+    width: 100px;
+    margin: 0 10px;
 }
 
 .gameOver button:hover {

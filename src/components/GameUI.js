@@ -55,6 +55,7 @@ function GameUI (props) {
         return game.gameState !== Game.GAME_STATES.play
         ? <div className="gameOver">
             <h3>Game Over!</h3>
+            <button onClick={() => {setHelp(true)}}>Help</button>
             <button onClick={restartGame}>Restart</button>
         </div>
         : <div className="cards">{cards}</div>
