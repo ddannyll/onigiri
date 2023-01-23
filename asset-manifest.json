@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/onigiri/static/css/main.860000a3.css",
-    "main.js": "/onigiri/static/js/main.f838dca1.js",
+    "main.css": "/onigiri/static/css/main.d6da445f.css",
+    "main.js": "/onigiri/static/js/main.f742807a.js",
     "static/js/27.a104aafa.chunk.js": "/onigiri/static/js/27.a104aafa.chunk.js",
     "index.html": "/onigiri/index.html"
   },
   "entrypoints": [
-    "static/css/main.860000a3.css",
-    "static/js/main.f838dca1.js"
+    "static/css/main.d6da445f.css",
+    "static/js/main.f742807a.js"
   ]
 }
