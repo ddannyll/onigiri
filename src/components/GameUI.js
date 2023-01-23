@@ -6,6 +6,7 @@ import Card from "./Card";
 function GameUI (props) {
     const {images, setScore, setHighscore, setLevel} = props
 
+    const [help, setHelp] = useState(true)
     const [game] = useState(new Game([...images.keys()]))
     const [levelSprites, setLevelSprites] = useState(game.levelSpriteList)
 
@@ -44,16 +45,25 @@ function GameUI (props) {
         }
     )
 
+    const getMain = () => {
+        if (help) {
+            return (<div className="gameOver">
+                <h3>Click as many sprites <em>without</em> clicking the same one twice!</h3>
+                <button onClick={() => {restartGame(); setHelp(false)}}>Start!</button>
+            </div>)
+        }
+        return game.gameState !== Game.GAME_STATES.play
+        ? <div className="gameOver">
+            <h3>Game Over!</h3>
+            <button onClick={restartGame}>Restart</button>
+        </div>
+        : <div className="cards">{cards}</div>
+    }
+
 
     return (
         <div className="gameUI">
-            {game.gameState !== Game.GAME_STATES.play
-                ? <div className="gameOver">
-                    <h3>Game Over!</h3>
-                    <button onClick={restartGame}>Restart</button>
-                </div>
-                : <div className="cards">{cards}</div>
-            }
+            {getMain()}
         </div>
     )
 }
