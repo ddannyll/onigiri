@@ -1,4 +1,3 @@
-import uniqid from 'uniqid';
 class Game {
     
     static GAME_STATES = {
